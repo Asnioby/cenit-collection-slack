@@ -1,0 +1,18 @@
+{
+  "name": "Message to Slack Chat General",
+  "active": true,
+  "discard_events": false,
+  "data_type_scope": "Event source",
+  "event": {
+    "_reference": true,
+    "name": "Communication | Message on created_at"
+  },
+  "translator": {
+    "_reference": true,
+    "name": "Message to Slack Chat"
+  },
+  "webhook": {
+    "_reference": true,
+    "name": "Slack | Message Channel: General"
+  }
+}

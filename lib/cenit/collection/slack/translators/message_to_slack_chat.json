@@ -1,0 +1,20 @@
+{
+  "name": "Message to Slack Chat",
+  "type": "Export",
+  "style": "ruby",
+  "mime_type": "application/x-www-form-urlencoded",
+  "bulk_source": false,
+  "transformation": "\"token=#{parameters[\"token\"]}&channel=#{parameters[\"channel\"]}&text=#{source.text}\"",
+  "source_data_type": {
+    "_reference": true,
+    "name": "Messaje",
+    "schema": {
+      "_reference": true,
+      "uri": "messaje.json",
+      "library": {
+        "_reference": true,
+        "name": "Communication"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Slack API Integration",
+  "category": "Collection",
+  "description": "Slack API Integration",
+  "pull_parameters": [
+    {
+      "label": "Slack Token",
+      "parameter": "On connection 'Slack API Connection' template parameter 'token'"
+    }
+  ]
+}

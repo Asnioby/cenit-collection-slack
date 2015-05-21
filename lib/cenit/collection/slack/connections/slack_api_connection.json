@@ -1,0 +1,9 @@
+{
+  "name": "Slack API Connection",
+  "url": "https://slack.com/api",
+  "template_parameters": [
+    {
+      "key": "token"
+    }
+  ]
+}

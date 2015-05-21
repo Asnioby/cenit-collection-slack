@@ -1,0 +1,9 @@
+{
+  "title": "Message",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Slack Rol",
+  "webhooks": [
+    {
+      "_reference": true,
+      "name": "Slack | Message Channel: General"
+    },
+    {
+      "_reference": true,
+      "name": "Slack | Message Channel: Random"
+    }
+  ],
+  "connections": [
+    {
+      "_reference": true,
+      "name": "Slack API Connection"
+    }
+  ]
+}
