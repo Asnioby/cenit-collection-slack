@@ -1,4 +1,3 @@
-require 'cenit/collection/slack/version'
 require 'cenit/collection/base/build'
 
 module Cenit

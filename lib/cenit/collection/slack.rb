@@ -1,15 +1,7 @@
-require "cenit/collection/slack/version"
-
 module Cenit
   module Collection
-    require "cenit/collection/slack/build"
+    require File.expand_path(File.join(*%w[ slack build ]), File.dirname(__FILE__))
     require "cenit/client"
-
-    # bundle exec irb -I lib -r 'cenit/collection/slack'
-    # config = {:push_url => "https://www.cenithub.com/api/v1/push", :connection_token => "My Conn Token", :connection_key => "My Conn Key"}
-    # config = {:push_url => "https://www.cenithub.com/api/v1/push", :user_token => "My User Token", :user_key => "My User Key"}
-    # Cenit::Collection::Slack.push_collection config
-    # Cenit::Collection::Slack.shared_collection
 
     @slack = Cenit::Collection::Slack::Build.new
 
@@ -31,7 +23,11 @@ module Cenit
     end
 
     def self.push_sample(model, config)
-      Cenit::Client.push(@slack.sample_data(model).to_json, config)
+      Cenit::Client.push(@slack.sample_model(model).to_json, config)
+    end
+
+    def self.import(data)
+      @slack.import_data(data)
     end
   end
 end
